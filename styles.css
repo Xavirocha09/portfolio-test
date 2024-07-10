@@ -112,7 +112,7 @@ button {
 }
 
 button:hover {
-    background-color: #cbe8ea;
+    text-decoration: underline;
 }
 
 .text-pads {
