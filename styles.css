@@ -112,7 +112,8 @@ button {
 }
 
 button:hover {
-    text-decoration: underline;
+   /* background-color: #cbe8ea;*/
+   text-decoration: underline;
 }
 
 .text-pads {
@@ -212,7 +213,7 @@ input {
   /* Change the color of links on hover */
   .topnav a:hover {
     width: 150;
-    background-color: #ddd;
+    text-decoration: underline;
     color: black;
   }
   
