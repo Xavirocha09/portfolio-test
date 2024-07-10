@@ -220,7 +220,8 @@ input {
   /* Add a color to the active/current link */
   .topnav a.active {
     width: 150;
-    background-color: #d7d7d7;
+    /*background-color: #d7d7d7;*/
+    text-decoration: underline;
     color: #272626;
   }
 
