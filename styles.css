@@ -7,6 +7,7 @@ body {
 /*Divisions*/
 .card {
     width: 1000;
+    height: auto;
     margin: auto auto;
     padding: 10px auto;
     justify-content: center;
