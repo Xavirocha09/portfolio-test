@@ -318,7 +318,7 @@ input {
   .img-resume {
     width: 200;
     height: 235;
-    border: 1px solid rgb(178, 179, 184);
+    border: none solid rgb(178, 179, 184);
     border-radius: 10px;
     margin: 10px 10px 0px 20px;
     box-shadow: px px 0px rgb(11, 12, 13);
