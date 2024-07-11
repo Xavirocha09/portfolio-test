@@ -33,7 +33,7 @@ body {
     font-weight: 500;
     color: #131313;
     
-    border: 1px solid rgb(178, 179, 184);
+    border: none solid rgb(178, 179, 184);
     border-radius: 0.5rem;
     padding: 4px 8px;
 
@@ -63,12 +63,13 @@ body {
     text-align: center;
     justify-content: center;
     padding: 0px 0px;
+    margin: auto;
 }
 
 .avatar {
     width: 300;
     height: 400;
-    border: 1px solid rgb(178, 179, 184);
+    border: none solid rgb(178, 179, 184);
     border-radius: 10px 10px 10px 10px;
     margin: 10px 10px 20px 20px;
     box-shadow: 0px 0px 0px rgb(11, 12, 13);
@@ -82,7 +83,7 @@ body {
     flex-direction: column;
     padding-top: auto auto;
     background: whitesmoke;
-    border: 1px solid rgb(178, 179, 184);
+    border: none solid rgb(178, 179, 184);
     border-radius: 10px;
     margin: 10px 10px;
     justify-content: center;
@@ -123,6 +124,8 @@ button:hover {
 }
 .hi {
     font-size: 60px;
+    text-align: left;
+    font-weight: 100;
     text-shadow: 0px 0px 0px rgb(92, 99, 100);
     padding: 0px 20px;
     margin: 30px 10px 20px;
@@ -168,10 +171,10 @@ button:hover {
 input {
     width: 90%;
     padding: 10px 20px;
-    border: none;
+    border: 1px solid white;
     border-radius: 10px;
     margin: 10px auto;
-    background-color:whitesmoke;
+    background-color:white
 
 }
 
@@ -194,6 +197,18 @@ input {
     font-weight: 100;
 }
 
+#hero-resume {
+  height: 270px;
+  width: 400px;
+  text-align: justify;
+  margin-bottom: -100px;
+
+}
+
+#msc-id {
+  font-size: 40px;
+}
+
 #dot {
     width: 14px;
     padding-right: 8;
@@ -211,7 +226,7 @@ input {
     background-color: #333;
     overflow: hidden;
     background: whitesmoke;
-    border: 1px solid rgb(178, 179, 184);
+    border: none solid rgb(178, 179, 184);
     border-radius: 10px;
     box-shadow: 1px 1px 10px darkgrey;
     margin: 0 auto 80px;
@@ -243,7 +258,7 @@ input {
   .topnav a.active {
     
     /*background-color: #d7d7d7;*/
-    text-decoration: underline;
+    font-weight: bold;
     color: #272626;
   }
 
@@ -256,11 +271,11 @@ input {
 
   #resume-section {
     width: 80%;
-    margin: 5px auto;
+    margin: 10px auto;
     padding: 20px 40px;
     text-align: left;
     background: whitesmoke;
-    border: 1px solid rgb(178, 179, 184);
+    border: none solid rgb(178, 179, 184);
     border-radius: 10px;
     
   }
@@ -301,12 +316,12 @@ input {
   }
 
   .img-resume {
-    width: 350;
-    height: 400;
+    width: 200;
+    height: 235;
     border: 1px solid rgb(178, 179, 184);
-    border-radius: 10px 10px 10px 10px;
-    margin: 10px 10px 20px 20px;
-    box-shadow: 0px 0px 0px rgb(11, 12, 13);
+    border-radius: 10px;
+    margin: 10px 10px 0px 20px;
+    box-shadow: px px 0px rgb(11, 12, 13);
 
 }
 
@@ -318,11 +333,14 @@ input {
   #email-contact-section {
     margin:auto;
     padding: 10px 10px 20px;
-    background-color: #eae9e9eb;
+    background-color: whitesmoke;
     border: none solid rgb(178, 179, 184);
     border-radius: 15px;
     width: 850px;
   }
+
+  
+  
 
 
 
