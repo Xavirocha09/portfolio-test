@@ -339,6 +339,16 @@ input {
     width: 850px;
   }
 
+  .project-section {
+    display: flex;
+  }
+
+  .project-display {
+    background-color: white;
+    border-radius: 10px;
+    margin: 5px;
+
+  }
   
   
 
