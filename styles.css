@@ -9,7 +9,7 @@ body {
     width: 950PX;
     height: auto;
     margin: auto auto;
-    padding: 10px auto;
+    padding: auto;
     justify-content: center;
     overflow: hidden;
     
@@ -23,6 +23,7 @@ body {
     display: flex;
     justify-content: space-around;
     margin: auto auto;
+    padding-top: 90px;
 }
 
 .btn-hero {
@@ -66,6 +67,14 @@ body {
     margin: auto;
 }
 
+#hero-resume-section {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 90px 0px 0px;
+  margin: auto;
+}
+
 .avatar {
     width: 300;
     height: 400;
@@ -99,6 +108,11 @@ p {
 .footer {
     margin-top: 50px;
     text-align: center;
+}
+
+#contact-section{
+  margin: 9% auto;
+  text-align: center;
 }
 
 button {
@@ -220,7 +234,13 @@ input {
 }
 /* Add a black background color to the top navigation */
 .topnav {
-    width: cover;
+  position: fixed;
+  text-align: center;
+  transform: translateX(10%);
+  transition: transform 0.5s ease-in;
+  flex-direction: row;
+
+  width: cover;
     height: 40;
     text-align: center;
     background-color: #333;
@@ -230,7 +250,7 @@ input {
     border-radius: 10px;
     box-shadow: 1px 1px 10px darkgrey;
     margin: 0 auto 80px;
-    padding: 5px;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -239,17 +259,19 @@ input {
   
   /* Style the links inside the navigation bar */
   .topnav a {
+    width:100%;
     float: left;
     color: #272626;
     text-align: center;
-    padding: 14px 0px;
+    padding: 0px 20px;
     text-decoration: none;
     font-size: 17px;
+    margin: 0px 30px;
   }
   
   /* Change the color of links on hover */
   .topnav a:hover {
-    width: 150;
+    
     text-decoration: underline;
     color: black;
   }
@@ -347,6 +369,35 @@ input {
     background-color: white;
     border-radius: 10px;
     margin: 5px;
+
+  }
+
+  .img-project {
+    width: 80%;
+    height: 35%;
+    box-shadow: 0px 0px 10px;
+    border-radius: 10px;
+    margin: 30px auto 0px;
+  }
+
+  .btn-project {
+    margin: -10px 0px 10px;
+    background-color: whitesmoke;
+    color: #272626;
+  }
+
+  .img-project-resume {
+    width: 400px;
+    height: 35%;
+    box-shadow: 0px 0px 5px;
+    border-radius: 10px;
+    margin: auto;
+  }
+
+  .project-display-about {
+    border-radius: 10px;
+    margin: auto 100px;
+    padding: 10px;
 
   }
   
