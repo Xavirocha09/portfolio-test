@@ -400,6 +400,27 @@ input {
     padding: 10px;
 
   }
+
+  .vid-nx {
+    margin: auto 10px;
+  }
+
+  .media-project {
+    width: 300px;
+    height: 400px;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+
+  video{
+    border-radius: 10px;
+    width: 300;
+    ;
+  }
+  embed {
+    margin-top: 10px;
+    border-radius: 10px;
+  }
   
   
 
