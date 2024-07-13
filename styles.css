@@ -128,6 +128,23 @@ button {
 
 }
 
+.btn-skills {
+  width: auto;  
+  height: 15px;
+  align-items: center;
+  text-align: center;
+  background-color: whitesmoke;
+
+  font-size: 10px;
+  font-weight: 200;
+  color: #131313;
+  
+  border: 1px solid rgb(178, 179, 184);
+  border-radius: 0.2rem;
+  padding: 1px 5px;
+  margin: 0.5;
+}
+
 button:hover {
    /* background-color: #cbe8ea;*/
    text-decoration: underline;
@@ -363,22 +380,30 @@ input {
 
   .project-section {
     display: flex;
+
   }
 
   .project-display {
+    width: 300;
     background-color: white;
     border-radius: 10px;
-    margin: 5px;
+    margin: 5;
 
   }
 
   .img-project {
-    width: 80%;
+    width: 85%;
     height: 35%;
     border: 3px solid whitesmoke;
     border-radius: 10px;
     margin: 20px auto 5px;
   }
+
+ .project-text-container {
+  margin: 0px auto;
+  width: 200;
+  height: 200;
+ }
 
   .btn-project {
     margin: -10px 0px 10px;
