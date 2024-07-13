@@ -32,7 +32,7 @@ body {
 
     font-size: .875rem;
     font-weight: 500;
-    color: #131313;
+    color: #212020;
     
     border: none solid rgb(178, 179, 184);
     border-radius: 0.5rem;
@@ -130,16 +130,16 @@ button {
 
 .btn-skills {
   width: auto;  
-  height: 15px;
+  height: 20px;
   align-items: center;
   text-align: center;
   background-color: whitesmoke;
 
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 200;
   color: #131313;
   
-  border: 1px solid rgb(178, 179, 184);
+  border: none solid rgb(178, 179, 184);
   border-radius: 0.2rem;
   padding: 1px 5px;
   margin: 0.5;
@@ -447,6 +447,19 @@ input {
     border-radius: 10px;
   }
   
+  #skills-container{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .soft-tech-cont {
+    width: 50%;
+    text-align: justify;
+    background-color: white;
+    margin: 20px 10px;
+    padding: 20px;
+    border-radius: 10px;
+  }
   
 
 
