@@ -338,10 +338,13 @@ input {
   .h4-resume{
     font-size: 12px;
     font-weight: 300;
+    margin: 0 20px;
   }
 
   .btn-resume-date {
-    height: 25px;
+    width: 200px;
+    height: 40px;
+    
     background-color: whitesmoke;
 
     font-size: 12px;
@@ -459,6 +462,11 @@ input {
     margin: 20px 10px;
     padding: 20px;
     border-radius: 10px;
+  }
+
+  li {
+    padding-bottom:8px;
+
   }
   
 
