@@ -151,7 +151,7 @@ button:hover {
 }
 
 .text-pads {
-    margin: 0px 20px;
+    margin: 0px 30px;
 }
 .hi {
     font-size: 60px;
@@ -191,7 +191,7 @@ button:hover {
 }
 
 .span {
-    text-decoration: underline;
+    font-size: larger;
 }
 
 .underline {
