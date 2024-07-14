@@ -28,33 +28,54 @@
                      <div>
                          <div class="inputs">
                              <div>
-                                 <label for="text">Name</label><br>
+                                 <label for="input-name">Name</label><br>
                                  <input id="input-email" type="text" placeholder="Name">
                              </div>
                              <div>
-                                 <label for="text">Last Name</label><br>
+                                 <label for="input-lastname">Last Name</label><br>
                                  <input id="input-email" type="text" placeholder="Last Name">
                              </div>
                              <div>
-                                 <label for="text">Company</label><br>
+                                 <label for="input-company">Company</label><br>
                                  <input id="input-email" type="text" placeholder="Company">
                              </div>
                              <div>
-                                 <label for="text">email</label><br>
+                                 <label for="input-email">email</label><br>
                                  <input id="input-email" type="email" placeholder="Email">
                              </div>
                              <div>
-                                 <label for="text">Message</label><br>
+                                 <label for="input-subject">Subject</label><br>
+                                 <input id="input-email" type="text" placeholder="Subject">
+                             </div>
+                             <div>
+                                 <label for="input-message">Message</label><br>
                                  <input id="input-message" type="text" placeholder="Message">
                              </div>
                          </div>
                     <div>
-                        <button><img class="elements">SEND</button>
+                        <button id="send-button">SEND</button>
                     </div>
                     
                 </div>
             </div>
             
         </div>
+        <script>
+            document.getElementById('send-button').addEventListener('click', function() {
+                var name = document.getElementById('input-name').value;
+                var lastName = document.getElementById('input-lastname').value;
+                var email = document.getElementById('input-email').value;
+                var subject = document.getElementById('input-subject').value;
+                var message = document.getElementById('input-message').value;
+    
+                if (!name || !lastName || !subject || !message) {
+                    alert('Please fill out all required fields (Name, Last Name, Subject, Message).');
+                    return;
+                }
+    
+                var mailtoLink = `mailto:rocha.javier.9999@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent('Name: ' + name + '\nLast Name: ' + lastName + '\nEmail: ' + email + '\n\n' + message)}`;
+                window.location.href = mailtoLink;
+            });
+        </script>
     </body>
 </html>
