@@ -388,6 +388,7 @@ input {
 
   .project-display {
     width: 300;
+    height: 450px;
     background-color: white;
     border-radius: 10px;
     margin: 5;
