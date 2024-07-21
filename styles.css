@@ -470,7 +470,23 @@ input {
 
   }
   
+  .main-container-project-section{
+    padding: 20px;
+  }
+  .container-project-section{
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
 
+    margin: auto;
+  }
+
+  .container-page-img{
+    width: 90%;
+    height: 180px;
+    border-radius: 20px;
+    margin: auto 10px;
+  }
 
 
   
