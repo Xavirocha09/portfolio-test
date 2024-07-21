@@ -415,6 +415,13 @@ input {
     color: #272626;
   }
 
+  .btn-project-page {
+    width: 100%;
+    margin: -1px;
+    background-color: whitesmoke;
+    color: #272626;
+  }
+
   .img-project-resume {
     width: 400px;
     height: 35%;
