@@ -1,4 +1,6 @@
-document.getElementById('send-button').addEventListener('click', function() {
+const submitBtn = document.getElementById('submitButton')
+
+    submitBtn.addEventListener('click', function() {
     var name = document.getElementById('input-name').value;
     var lastName = document.getElementById('input-lastname').value;
     var email = document.getElementById('input-email').value;
@@ -13,8 +15,8 @@ document.getElementById('send-button').addEventListener('click', function() {
     console.log('Message:', message);
 
     if (!name || !lastName || !subject || !message) {
-        alert('Please fill out all required fields (Name, Last Name, Subject, Message).');
-        return;
+        return alert('Please fill out all required fields (Name, Last Name, Subject, Message).')
+        
     }
 
     var mailtoLink = `mailto:rocha.javier.9999@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent('Name: ' + name + '\nLast Name: ' + lastName + '\nEmail: ' + email + '\n\n' + message)}`;
@@ -22,12 +24,9 @@ document.getElementById('send-button').addEventListener('click', function() {
     window.location.href = mailtoLink;
 });
 
-function sendMessage() {
-    // Get the button element
-    const button = document.getElementById('submitButton');
-    
+function sendMessage() {    
     // Replace the button with a paragraph
-    button.outerHTML = '<p id="submitMessage" class="submit-message" aria-live="polite">Message sent! ✅</p>';
+    submitBtn.outerHTML = '<p id="submitMessage" class="submit-message" aria-live="polite">Message sent! ✅</p>';
     
     // Get the home link element and add focus to it
     document.getElementById('homeLink').focus();
