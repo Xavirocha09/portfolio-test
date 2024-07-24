@@ -1,6 +1,6 @@
 const submitBtn = document.getElementById('submitButton')
 
-    submitBtn.addEventListener('click', function() {
+function sendMessage() {
     let name = document.getElementById('input-name').value;
     let lastName = document.getElementById('input-lastname').value;
     let email = document.getElementById('input-email').value;
@@ -18,4 +18,4 @@ const submitBtn = document.getElementById('submitButton')
 
     const mailtoLink = `mailto:rocha.javier.9999@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent('Name: ' + name + '\nLast Name: ' + lastName + '\nEmail: ' + email + '\n\n' + message)}`;
     window.location.href = mailtoLink;
-});
+}
