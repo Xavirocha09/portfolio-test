@@ -4,17 +4,17 @@
     </head>
     <body>
     
-        <div class="card">
+        <main class="card">
             
-            <div class="topnav">
-                <a href="index.html"><img id="logo" src="images/javi.jpg"></a>
+            <nav class="topnav">
+                <a href="index.html" id="homeLink"><img id="logo" src="images/javi.jpg"></a>
                 <a class="active" href="index.html">Home</a>
                 <a href="resume.html">Resume</a>
                 <a href="projects.html">Projects</a>
                 <a href="contact.html">Contact</a>
-            </div>
+            </nav>
             
-            <div id="hero-section">
+            <section id="hero-section">
 
                 <img class="avatar" src="images/javi2.png">
 
@@ -40,8 +40,8 @@
 
                 
         
-            </div>
-            <div class="footer">
+            </section>
+            <section class="footer">
                 <div id="email-contact-section">
                     <h2>About Me</span></h2>
                         <p class="text-pads">
@@ -170,17 +170,17 @@
                             </div>
                         </div>
                  
-                    <button>Send</button>
+                    <button id="submitButton" type="button" onclick="sendMessage()" aria-controls="submitMessage">Send</button>
                     </div>
                 </div>
                    
                 
-            </div>
-            
-        </div>
+            </section>
+                <footer>
+                    <p>Do you like what you see? <a href="contact.html">Click here if you want your own personalized website</a></p>
+                </footer>
+        </main>
         
     </body>
-    <footer>
-        <p>Do you like what you see? <a href="contact.html">Click here if you want your own personalized website</a></p>
-    </footer>
+   
 </html>
