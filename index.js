@@ -1,23 +1,3 @@
-const submitBtn = document.getElementById('submitButton')
-
-    submitBtn.addEventListener('click', function() {
-    
-
-    console.log('Button clicked');
-    console.log('Name:', name);
-    console.log('Last Name:', lastName);
-    console.log('Email:', email);
-    console.log('Subject:', subject);
-    console.log('Message:', message);
-
-    if (!name || !lastName || !subject || !message) {
-        return alert('Please fill out all required fields (Name, Last Name, Subject, Message).')
-        
-    }
-
-    
-});
-
 function sendMessage() {
     // Get the button element
     const button = document.getElementById('submitButton');
