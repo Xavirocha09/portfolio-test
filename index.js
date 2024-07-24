@@ -16,4 +16,4 @@ function sendMessage() {
         console.log('Mailto Link:', mailtoLink);
         window.location.href = mailtoLink;
     }
-    
+}
