@@ -9,10 +9,10 @@ function sendMessage() {
     const focusEl = document.getElementById("focus-el")
     
     if (!nameEl || !lastName || !subject || !message) {
-    submitMsg.textContent = '<p id="submitMessage" class="submit-message" aria-live="polite"> Please fill out all required fields (Name, Last Name, Subject, Message)</p>';
-    focusEl.focus();
-    }else{
-        button.outerHTML = '<p id="submitMessage" class="submit-message" aria-live="polite">Message sent! ✅</p>';
+        submitMsg.textContent = '<p id="submitMessage" class="submit-message" aria-live="polite"> Please fill out all required fields (Name, Last Name, Subject, Message)</p>';
+    }
+    else{
+        submitMsg.textContent = '<p id="submitMessage" class="submit-message" aria-live="polite">Message sent! ✅</p>';
         const mailtoLink = `mailto:rocha.javier.9999@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent('Name: ' + nameEl + '\nLast Name: ' + lastName + '\nEmail: ' + email + '\n\n' + message)}`;
         console.log('Mailto Link:', mailtoLink);
         window.location.href = mailtoLink;
