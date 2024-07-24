@@ -1,5 +1,4 @@
 function sendMessage() {
-    // Get the button element
     const button = document.getElementById('submitButton');
     const nameEl = document.getElementById('input-name').value;
     const lastName = document.getElementById('input-lastname').value;
@@ -8,7 +7,7 @@ function sendMessage() {
     const message = document.getElementById('input-message').value;
     const submitMsg = document.getElementById('submit-msg')
     const focusEl = document.getElementById("focus-el")
-    // Replace the button with a paragraph
+    
     if (!nameEl || !lastName || !subject || !message) {
     submitMsg.textContent = '<p id="submitMessage" class="submit-message" aria-live="polite"> Please fill out all required fields (Name, Last Name, Subject, Message)</p>';
     focusEl.focus();
