@@ -11,15 +11,15 @@
         
         <div class="card">
             
-            <div class="topnav">
+            <nav class="topnav">
                 <a href="index.html"><img id="logo" src="images/javi.jpg"></a>
                 <a href="index.html">Home</a>
                 <a href="resume.html">Resume</a>
                 <a href="projects.html">Projects</a>
                 <a class="active" href="contact.html">Contact</a>
-            </div>
+            </nav>
             
-            <div  id="contact-section">
+            <section  id="contact-section">
                 <img id="img-contactme" src="images/javi.jpg">    
                 <div id="email-contact-section">
                     <h4>Feel free to reach out: </span></h4>
@@ -28,7 +28,7 @@
                      <a href="contact.html"><img class="Linkedin" src="elements/linkedin.png"></a>
                      <a href="contact.html"><img class="Linkedin" src="elements/g2.png"></a>
                  </div>
-                 <div>
+                 <form>
                      <p> or write me a message below:</p>
                      <div>
                          <div class="inputs">
@@ -57,12 +57,14 @@
                                 <textarea id="input-message" name="message" placeholder="Enter message here" required></textarea>
                             </div>
                         </div>
-                    <p id="submit-msg"></p>
-                    <button id="submitButton" type="button" onclick="sendMessage()" aria-controls="submitMessage">Send</button>
-                    
-                </div>
-            </div>
-            
+                        <p id="submit-msg"></p>
+                        <button id="submitButton" type="button" onclick="sendMessage()" aria-controls="submitMessage">Send</button>
+                    </form>
+            </section>
+        </div>
+
+        <div>
+            <button id="top" onclick="topFunction()" ><img class= topImg src="images/top.png"></button>
         </div>
         <script src="index.js"></script>
     </body>
