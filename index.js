@@ -41,24 +41,24 @@ function sendMessage() {
         submitBtn.outerHTML = '<br> <a href="index.html"><button id="homeLink">Home</button></a><br> <a href="projects.html"><button>check out my Projects Page</button></a><br><a href="contact.html"><button>Send another message</button></a>'
         document.getElementById('homeLink').focus(); // Assuming 'homeLink' exists
     } else {
-        submitMsg.innerHTML = " "// Determine which field is missing and set focus accordingly
+        submitMsg.innerHTML = " "
         if (!name) {
             document.getElementById('input-name').focus();
-             submitMsg.innerHTML += '<p class="error-message" aria-live="assertive">Please enter your Name</p>';
+             submitMsg.innerHTML += '<p class="error-message" aria-live="assertive">⚠️ Please enter your Name</p>';
         } else if (!lastName) {
            
             document.getElementById('input-lastname').focus();
-            submitMsg.innerHTML += '<p class="error-message" aria-live="assertive">Please enter your Last Name </p>'
+            submitMsg.innerHTML += '<p class="error-message" aria-live="assertive">⚠️ Please enter your Last Name </p>'
             
         } else if (!email) {
             
             document.getElementById('input-email').focus();
-            submitMsg.innerHTML += '<p class="error-message" aria-live="assertive">Please enter your Email </p>'
+            submitMsg.innerHTML += '<p class="error-message" aria-live="assertive">⚠️ Please enter your Email </p>'
 
         } else if (!subject) {
             
             document.getElementById('input-subject').focus();
-            submitMsg.innerHTML += '<p class="error-message" aria-live="assertive">Please enter a subject </p>'
+            submitMsg.innerHTML += '<p class="error-message" aria-live="assertive">⚠️ Please enter a subject </p>'
         }
 
        

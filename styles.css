@@ -218,6 +218,15 @@ textarea{
   background-color:white
 }
 
+.error-message{
+  color: red;
+  margin-bottom: -30;
+}
+
+.submit-message{
+  margin-bottom: -40;
+}
+
 .inputs {
   text-align: left;
   margin: 20px;
