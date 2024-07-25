@@ -33,7 +33,7 @@ function sendMessage() {
     if (name && lastName && email) {
         // Assuming subject is either a field in your form or a predefined variable
         const submitBtn= document.getElementById("submitButton")
-        let subject = subjectVal
+        let subject = Form Inquiry - `${subjectVal} - ${lastName},${name}`
         const mailtoLink = `mailto:rocha.javier.9999@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent('Name: ' + name + '\nLast Name: ' + lastName + '\nEmail: ' + email + '\n\n' + message)}`;
         
         window.open(mailtoLink, '_blank');
