@@ -7,19 +7,6 @@
     const message = document.getElementById('input-message').value;
     const submitMsg = document.getElementById('submit-msg')
     const focusEl = document.getElementById("focus-el")
-    
-    
-    //function sendMessage() {
-    //    if (nameEl===false) {
-     //       submitMsg.textContent = '<p id="submitMessage" class="submit-message" aria-live="polite"> Please fill out all required fields (Name, Last Name, Subject, Message)</p>';
-    //    }
-      //  else{
-        //    submitMsg.textContent = '<p id="submitMessage" class="submit-message" aria-live="polite">Message sent! ✅</p>';
-          //  const mailtoLink = `mailto:rocha.javier.9999@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent('Name: ' + nameEl + '\nLast Name: ' + lastName + '\nEmail: ' + email + '\n\n' + message)}`;
-            //console.log('Mailto Link:', mailtoLink);
-         //   window.location.href = mailtoLink;
-        //}
-//}
 
 function sendMessage() {
     // Get the message display element
@@ -60,11 +47,9 @@ function sendMessage() {
             document.getElementById('input-subject').focus();
             submitMsg.innerHTML += '<p class="error-message" aria-live="assertive">⚠️ Please enter a subject </p>'
         }
-
-       
-    }
-    
+    }  
 }
+
 let topBtn = document.getElementById("top")
 
 window.onscroll = function() {scroll()};
@@ -81,5 +66,5 @@ function scroll(){
     // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
       document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
+      document.documentElement.scrollTop = 10;
     }

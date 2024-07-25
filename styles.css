@@ -356,7 +356,7 @@ textarea{
   .h4-resume{
     font-size: 12px;
     font-weight: 300;
-    margin: 0 20px;
+    margin: 10px 20px;
   }
 
   .btn-resume-date {
@@ -513,23 +513,24 @@ textarea{
   }
   .container-project-section{
     display: flex;
-    justify-content: space-around;
-    text-align: left;
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+    justify-content: flex-start; /* Align items to the start of the container */
     background-color: whitesmoke;
     border-radius: 10px;
-    padding: 15px;
-    margin: auto;
+    padding: 0; /* Remove padding if you want images to start at the very edge */
+    margin: auto 15px;
   }
 
   .container-page-img{
-    width: 96%;
-    height: 250px;
-    border-radius: 20px;
-    margin: 20px;
+    width: 210px; /* Set the desired width */
+    height: 220px; /* Set the desired height */
+    object-fit:fill; /* Ensure the image covers the entire box without stretching */
+    margin: 0; /* Remove margin to eliminate space between images */
+    padding: 0; /* Ensure there's no padding around the images */
   }
 
   .container-page-img:hover{
-    transform: scale(1.1);
+    transform: scale(1.5);
   }
 
   footer p{
