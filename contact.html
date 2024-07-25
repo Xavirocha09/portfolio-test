@@ -32,34 +32,33 @@
                      <p> or write me a message below:</p>
                      <div>
                          <div class="inputs">
-                             <div>
-                                 <label for="input-name">Name</label><br>
-                                 <input id="input-email" type="text" placeholder="Name">
-                             </div>
-                             <div>
-                                 <label for="input-lastname">Last Name</label><br>
-                                 <input id="input-email" type="text" placeholder="Last Name">
-                             </div>
-                             <div>
-                                 <label for="input-company">Company</label><br>
-                                 <input id="input-email" type="text" placeholder="Company">
-                             </div>
-                             <div>
-                                 <label for="input-email">email</label><br>
-                                 <input id="input-email" type="email" placeholder="Email">
-                             </div>
-                             <div>
+                            <div>
+                                <label for="text">Name</label><br>
+                                <input id="input-name" type="text" placeholder="Jon" id="focus-el" required>
+                            </div>
+                            <div>
+                                <label for="text">Last Name</label><br>
+                                <input id="input-lastname" type="text" placeholder="Doe" required>
+                            </div>
+                            <div>
+                                <label for="text">Company</label><br>
+                                <input id="input-company" type="text" placeholder="Company Inc.">
+                            </div>
+                            <div>
+                                <label for="text">email</label><br>
+                                <input id="input-email" type="email" placeholder="jon_doe@email.com" required>
+                            </div>
+                            <div>
                                  <label for="input-subject">Subject</label><br>
-                                 <input id="input-email" type="text" placeholder="Subject">
+                                 <input id="input-subject" type="text" placeholder="Inquiry about portfolio project" required>
                              </div>
-                             <div>
-                                 <label for="input-message">Message</label><br>
-                                 <input id="input-message" type="text" placeholder="Message">
-                             </div>
-                         </div>
-                    <div>
-                        <button id="send-button">SEND</button>
-                    </div>
+                            <div>
+                                <label for="text">Message</label><br>
+                                <textarea id="input-message" name="message" placeholder="Enter message here" required></textarea>
+                            </div>
+                        </div>
+                    <p id="submit-msg"></p>
+                    <button id="submitButton" type="button" onclick="sendMessage()" aria-controls="submitMessage">Send</button>
                     
                 </div>
             </div>
