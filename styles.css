@@ -522,15 +522,16 @@ textarea{
   }
 
   .container-page-img{
-    width: 210px; /* Set the desired width */
+    width: 200px; /* Set the desired width */
     height: 220px; /* Set the desired height */
     object-fit:fill; /* Ensure the image covers the entire box without stretching */
     margin: 0; /* Remove margin to eliminate space between images */
-    padding: 0; /* Ensure there's no padding around the images */
+    padding: 1; /* Ensure there's no padding around the images */
+    border-radius: px;
   }
 
   .container-page-img:hover{
-    transform: scale(1.5);
+    transform: scale(1.1);
   }
 
   footer p{
