@@ -459,6 +459,23 @@ textarea{
     margin: auto;
   }
 
+  #resume-contactme-section{
+    text-align: center;
+    width: 89%;
+    background-color: whitesmoke;
+    margin: auto;
+    border-radius: 10px;
+  }
+
+  #resume-contactme-section button{
+    background-color: transparent;
+    color:#000;
+  }
+
+  #resume-contactme-section:hover{
+    transform: scale(1.1);
+  }
+
   .project-display-about {
     border-radius: 10px;
     margin: auto 100px;
@@ -510,20 +527,21 @@ textarea{
   
   .main-container-project-section{
     padding: 20px;
+    margin: 10;
   }
   .container-project-section{
     display: flex;
     flex-wrap: wrap; /* Allow items to wrap onto the next line */
-    justify-content: flex-start; /* Align items to the start of the container */
-    background-color: whitesmoke;
+    justify-content: flex-center; /* Align items to the start of the container */
+   
     border-radius: 10px;
     padding: 0; /* Remove padding if you want images to start at the very edge */
-    margin: auto 15px;
+    margin: 30px;
   }
 
   .container-page-img{
-    width: 200px; /* Set the desired width */
-    height: 220px; /* Set the desired height */
+    width: 220px; /* Set the desired width */
+    height: 240px; /* Set the desired height */
     object-fit:fill; /* Ensure the image covers the entire box without stretching */
     margin: 0; /* Remove margin to eliminate space between images */
     padding: 1; /* Ensure there's no padding around the images */
@@ -562,5 +580,46 @@ textarea{
   width: 40px;
   margin: auto;
 }
+
+#phoneNumber {
+  width: auto;
+  padding: auto;
+  border-radius: 10px;
+  font-weight: bold;
+  color: black;
+}
+
+.contactContainer{
+  display: flex;
+  justify-content: space-around;
+}
+
+.contactContainerInfo{
+  width: 400px;
+  color: #000;
+  margin: 0;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.contactContainer button {
+  background-color: transparent;
+  width: 40px;
+  margin: auto;
+  height: 40px; /* Define a height for the button */
+  padding: 10px; /* Remove any default padding */
+  display: flex; /* Use flexbox for easy centering */
+  align-items: center; /* Vertically center */
+  justify-content: center; /* Horizontally center */
+  cursor: pointer; /* Add a pointer cursor on hover */
+}
+
+#email-contact-section button img {
+  max-width: 100%; /* Ensure the image doesn't exceed the button width */
+  max-height: 100%; /* Ensure the image doesn't exceed the button height */
+}
+
+
+
 
   

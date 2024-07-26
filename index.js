@@ -68,3 +68,38 @@ function topFunction() {
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 10;
     }
+
+    const emailBtn = document.getElementById('email-btn');
+    const linkedInBtn = document.getElementById('linkedin-btn');
+    const phoneBtn = document.getElementById('phone-btn');
+    const contactInfo = document.getElementById('contact-field');
+    const myPhone = `+1(819)-919-2186`;
+    const myEmail = "rocha.javier.9999@gmail.com";
+    const myLinkedin = "https://www.linkedin.com/in/javier-rocha-m-sc-8b247b187/";
+    
+    // Store original HTML content
+    const originalEmailHTML = emailBtn.innerHTML;
+    const originalLinkedInHTML = linkedInBtn.innerHTML;
+    const originalPhoneHTML = phoneBtn.innerHTML;
+    
+    emailBtn.addEventListener('click', function() {
+        resetButtons();
+        emailBtn.innerHTML = `<div class="contactContainerInfo">${myEmail}<button onclick="copyToClipboard('${myEmail}')"><img src="elements/copy.png" </button></div>`;
+    });
+    
+    linkedInBtn.addEventListener('click', function() {
+        resetButtons();
+        linkedInBtn.innerHTML = `<div class="contactContainerInfo"><a href="${myLinkedin}" target="_blank">My LinkedIn</a></div>`;
+    });
+    
+    phoneBtn.addEventListener('click', function() {
+        resetButtons();
+        phoneBtn.innerHTML = `<div class="contactContainerInfo">${myPhone}<button onclick="copyToClipboard('${myEmail}')"><img src="elements/copy.png" </button></div>`;
+    });
+    
+    function resetButtons() {
+        // Reset all buttons to their original HTML content
+        emailBtn.innerHTML = originalEmailHTML;
+        linkedInBtn.innerHTML = originalLinkedInHTML;
+        phoneBtn.innerHTML = originalPhoneHTML;
+    }
