@@ -36,6 +36,13 @@ body {
   padding: 50px;
 }
 
+.project-menu button{
+  width: 400px;
+  height: 100px;
+  border-radius: 2px;
+  margin: -10px;
+}
+
 .btn-hero {
     height: auto;
     background-color: whitesmoke;
