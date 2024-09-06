@@ -7,7 +7,7 @@ body {
 }
 /*Divisions*/
 .card {
-    width: 950PX;
+    width: 95%;
     height: auto;
     margin: auto auto;
     padding: auto;
@@ -75,13 +75,20 @@ body {
     align-items: start;
 
 }
-
 #hero-section {
+  text-align: center;
+  justify-content: center;
+  padding: 90px 0px 0px;
+  margin: auto;
+}
+@media (min-width: 800px){
+  #hero-section {
     display: flex;
     text-align: center;
     justify-content: center;
     padding: 90px 0px 0px;
     margin: auto;
+}
 }
 
 #hero-resume-section {
@@ -105,8 +112,7 @@ body {
 
 
 #intro-text {
-    width: 550px;
-    height: 400px;
+    width: 100%;
     text-align: left;
     flex-direction: column;
     padding-top: auto auto;
@@ -117,6 +123,31 @@ body {
     justify-content: center;
     overflow:hidden;
     
+}
+@media (min-width:800px){
+  #intro-text {
+    width: 550px;
+    height: 400px;
+    text-align: center;
+    flex-direction: column;
+    padding-top: auto auto;
+    background: none;
+    border: none solid rgb(178, 179, 184);
+    border-radius: 10px;
+    margin: 10px 10px;
+    justify-content: center;
+    overflow:visible;
+    
+}
+}
+@media (max-width:600px){
+#intro-text button {
+  width: 80%;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  margin: auto auto 10px 20px;
+}
 }
 
 p {
@@ -422,7 +453,29 @@ textarea{
 
   .project-section {
     display: flex;
-    height: auto;
+
+  }
+
+  @media (max-width:800px){
+    .project-section {
+      display: block;
+      align-items: center;
+      margin: auto;
+  
+    }
+
+    .project-display{
+     width: 100%;
+     margin: auto;
+     display: inline-block;
+     text-align: center;
+
+    }
+    .img-project{
+      width: 98%;
+        margin: 20px auto 5px;
+        display: inline-block; 
+    }
 
   }
 
