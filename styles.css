@@ -81,7 +81,7 @@ body {
   padding: 90px 0px 0px;
   margin: auto;
 }
-@media (min-width: 800px){
+@media (max-width: 800px){
   #hero-section {
     display: flex;
     text-align: center;
@@ -140,7 +140,7 @@ body {
     
 }
 }
-@media (max-width:600px){
+@media (min-width:600px){
 #intro-text button {
   width: 80%;
   display: inline-block;
