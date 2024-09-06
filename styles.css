@@ -112,7 +112,7 @@ body {
 
 
 #intro-text {
-    width: 87%;
+    width: 95%;
     text-align: center;
     padding: auto;
     background: none;
@@ -122,6 +122,16 @@ body {
     overflow:hidden;
     
 }
+
+#intro-text button {
+  background-color: #212020;
+  color: whitesmoke;
+}
+
+#intro-text h4{
+  width: 50%;
+}
+
 @media (max-width:800px){
   #intro-text {
     width: 80%;
@@ -461,29 +471,31 @@ textarea{
   }
 
   .project-section {
-    display: flex;
+    display: inline-block;
     text-align: center;
 
   }
 
   @media (max-width:800px){
     .project-section {
-      display: block;
+      display: flex;
       align-items: center;
       margin: auto;
   
     }
 
     .project-display{
-     width: 100%;
+      width: 300;
+      height: 400;
      margin: auto;
      display: inline-block;
      text-align: center;
+     margin: 5;
 
     }
 
     .img-project{
-      width: 98%;
+        width: 98%;
         margin: 20px auto 5px;
         display: inline-block; 
     }
@@ -495,7 +507,7 @@ textarea{
     height: 400;
     background-color: whitesmoke;
     border-radius: 10px;
-    margin: 5;
+    
 
   }
 
