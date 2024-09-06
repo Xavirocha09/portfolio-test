@@ -453,6 +453,7 @@ textarea{
 
   .project-section {
     display: flex;
+    text-align: center;
 
   }
 
