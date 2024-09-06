@@ -3,7 +3,7 @@ body {
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background: rgb(64, 66, 69);
     font-weight: lighter;
-    line-height: 23px;
+    line-height: 1.5;
 }
 /*Divisions*/
 .card {
@@ -112,32 +112,40 @@ body {
 
 
 #intro-text {
-    width: 100%;
-    text-align: left;
-    flex-direction: column;
-    padding-top: auto auto;
+    width: 87%;
+    text-align: center;
+    padding: auto;
     background: none;
     border: none solid rgb(178, 179, 184);
     border-radius: 10px;
-    margin: 10px 10px;
-    justify-content: center;
+    margin: auto;
     overflow:hidden;
     
 }
-@media (min-width:800px){
+@media (max-width:800px){
   #intro-text {
-    width: 550px;
-    height: 400px;
+    width: 80%;
     text-align: center;
+    align-items: center;
     flex-direction: column;
     padding-top: auto auto;
     background: none;
     border: none solid rgb(178, 179, 184);
     border-radius: 10px;
-    margin: 10px 10px;
+    margin: 10px;
     justify-content: center;
     overflow:visible;
     
+}
+.hi {
+  font-size: 60px;
+  text-align: left;
+  font-weight: 100;
+  letter-spacing: 1px;
+  text-shadow: 0px 0px 0px rgb(92, 99, 100);
+  padding: 0px 20px;
+  margin: 30px 10px 20px;
+  line-height: 1.1;
 }
 }
 @media (min-width:600px){
@@ -206,13 +214,14 @@ button:hover {
 }
 .hi {
     font-size: 60px;
-    text-align: left;
+    text-align: center;
     font-weight: 100;
     letter-spacing: 1px;
     text-shadow: 0px 0px 0px rgb(92, 99, 100);
     padding: 0px 20px;
-    margin: 30px 10px 20px;
+    margin: .2em auto;
     line-height: 1.1;
+    
 }
 
 .left-align {
