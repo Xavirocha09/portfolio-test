@@ -339,7 +339,7 @@ textarea{
   width: 70%;
     height: 40;
     background-color: #333;
-    overflow:scroll;
+    overflow:hidden;
     background: whitesmoke;
     border: none solid rgb(178, 179, 184);
     border-radius: 10px;
