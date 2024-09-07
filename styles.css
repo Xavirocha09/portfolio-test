@@ -110,15 +110,20 @@ body {
 }
 
 #intro-text {
-    width: 95%;
-    color: blue;
+    width: 80%;
+    color: red;
     text-align: center;
-    padding: auto;
+    align-items: center;
+    flex-direction: column;
+    padding-top: auto auto;
     background: none;
     border: none solid rgb(178, 179, 184);
     border-radius: 10px;
-    margin: auto;
-    overflow:hidden;
+    margin: 10px;
+    justify-content: center;
+    overflow:visible;
+
+
     
 }
 
@@ -134,20 +139,18 @@ body {
   width: 50%;
 }
 
-@media (min-width:500px){
+@media screen and (min-width: 500px) and (max-width: 1300px){
   #intro-text {
-    width: 80%;
-    color: red;
-    text-align: center;
-    align-items: center;
-    flex-direction: column;
-    padding-top: auto auto;
-    background: none;
-    border: none solid rgb(178, 179, 184);
-    border-radius: 10px;
-    margin: 10px;
-    justify-content: center;
-    overflow:visible;
+  width: 95%;
+  color: blue;
+  text-align: center;
+  padding: auto;
+  background: none;
+  border: none solid rgb(178, 179, 184);
+  border-radius: 10px;
+  margin: auto;
+  overflow:hidden;
+  }
     
 }
 .hi {
