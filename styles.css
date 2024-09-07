@@ -132,7 +132,7 @@ body {
   width: 50%;
 }
 
-@media (max-width:800px){
+@media (max-width:500px){
   #intro-text {
     width: 80%;
     text-align: center;
@@ -476,7 +476,7 @@ textarea{
 
   }
 
-  @media (max-width:800px){
+  @media (max-width:500px){
     .project-section {
       display: flex;
       align-items: center;
