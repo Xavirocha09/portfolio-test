@@ -109,10 +109,9 @@ body {
 
 }
 
-
-
 #intro-text {
     width: 95%;
+    color: blue;
     text-align: center;
     padding: auto;
     background: none;
@@ -135,9 +134,10 @@ body {
   width: 50%;
 }
 
-@media (max-width:500px){
+@media (min-width:500px){
   #intro-text {
     width: 80%;
+    color: red;
     text-align: center;
     align-items: center;
     flex-direction: column;
