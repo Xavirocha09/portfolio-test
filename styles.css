@@ -119,7 +119,7 @@ body {
     box-shadow: 0px 0px px rgb(11, 12, 13);
 
 }
-
+@media (max-width:768px){
 #intro-text {
     text-align: center;
     align-items: center;
@@ -132,7 +132,7 @@ body {
     justify-content: center;
     overflow:visible;  
 }
-
+}
 #intro-text button {
   width: 80%;
   margin: 10px auto;
@@ -344,7 +344,54 @@ textarea{
     width: 10px;
     padding-right: 8;
 }
-/* Add a black background color to the top navigation */
+@media (max-width:768px){
+.topnav {
+  position: fixed;
+  width: fit-content;
+  height: fit-content;
+    background: whitesmoke;
+    border: none solid rgb(178, 179, 184);
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px darkgrey;
+    margin: 0 auto 80px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    top: 20;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+
+    float:center;
+    color: #272626;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.06rem;
+    margin: 0px 10px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    
+    text-decoration: underline;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    
+    /*background-color: #d7d7d7;*/
+    font-weight: bold;
+    color: #272626;
+  }
+}
+
+@media (min-width:768px){
 .topnav {
   position: fixed;
   width: 70%;
@@ -393,7 +440,7 @@ textarea{
     font-weight: bold;
     color: #272626;
   }
-
+}
   #logo {
     width: 25px;
     border-radius: 20%;
