@@ -76,18 +76,29 @@ body {
 
 }
 #hero-section {
+  display: block;
   text-align: center;
-  justify-content: center;
-  padding: 90px 0px 0px;
+  padding:90px 0px 0px;
   margin: auto;
 }
-@media (max-width: 800px){
+
+@media (min-width: 768px){
   #hero-section {
+    max-width: 1000px;
     display: flex;
-    text-align: center;
-    justify-content: center;
-    padding: 90px 0px 0px;
-    margin: auto;
+    margin-top: 0px;
+    margin-left: 50px;
+    overflow: hidden;
+}
+.avatar {
+  display: flex;
+  width: 275;
+  height: 280;
+  border: none;
+  border-radius: 50%;
+  margin-top: auto;
+  box-shadow: 0px 0px px rgb(11, 12, 13);
+
 }
 }
 
@@ -104,65 +115,62 @@ body {
     height: 280;
     border: none;
     border-radius: 50%;
-    margin: 40px 20px 20px 40px;
+    margin: auto;
     box-shadow: 0px 0px px rgb(11, 12, 13);
 
 }
 
 #intro-text {
-    width: 80%;
-    color: red;
     text-align: center;
     align-items: center;
-    flex-direction: column;
-    padding-top: auto auto;
+    padding-top: auto;
     background: none;
     border: none solid rgb(178, 179, 184);
     border-radius: 10px;
-    margin: 10px;
+    margin: auto;
     justify-content: center;
-    overflow:visible;
-
-
-    
+    overflow:visible;  
 }
 
 #intro-text button {
   width: 80%;
-  display: inline-block;
-  align-items: center;
-  text-align: center;
-  margin: auto auto 10px 20px;
+  margin: 10px auto;
 }
 
 #intro-text h4{
   width: 50%;
 }
-
-@media (min-width: 500px) and (max-width: 1300px){
-  #intro-text {
-  width: 95%;
-  color: blue;
-  text-align: center;
+/* for larger screens */
+@media (min-width: 768px){
+#hero-section{
+  max-width: 900px;
+  max-height: 500px;
+} 
+#intro-text {
+  width: 100%;
   padding: auto;
   background: none;
   border: none solid rgb(178, 179, 184);
   border-radius: 10px;
   margin: auto;
   overflow:hidden;
-  }
-    
-}
+}  
 .hi {
+  display: block;
   font-size: 3.75rem;
   text-align: left;
   font-weight: 100;
   letter-spacing: 1px;
   text-shadow: 0px 0px 0px rgb(92, 99, 100);
   padding: 0px 20px;
-  margin: 30px 10px 20px;
+  margin: auto;
   line-height: 1.1;
 }
+#intro-text button {
+  width: 30%;
+  margin: 10px 5px;
+}
+
 }
 
 
@@ -221,13 +229,11 @@ button:hover {
     margin: 0px 30px;
 }
 .hi {
+    display: block;
     font-size: 3.75rem;
-    text-align: center;
     font-weight: 100;
     letter-spacing: 1px;
-    text-shadow: 0px 0px 0px rgb(92, 99, 100);
-    padding: 0px 20px;
-    margin: .2em auto;
+    margin: auto;
     line-height: 1.1;
     
 }
@@ -452,11 +458,6 @@ textarea{
 
 }
 
-  #img-contactme {
-    width: 100px;
-    border-radius: 10%;
-  }
-
   #email-contact-section {
     margin:auto;
     padding: 10px;
@@ -472,7 +473,7 @@ textarea{
 
   }
 
-  @media (max-width:500px){
+  @media (min-width:678px){
     .project-section {
       display: flex;
       align-items: center;
