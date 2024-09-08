@@ -123,6 +123,7 @@ body {
 #intro-text {
     text-align: center;
     align-items: center;
+    color: red;
     padding-top: auto;
     background: none;
     border: none solid rgb(178, 179, 184);
@@ -148,6 +149,7 @@ body {
 } 
 #intro-text {
   width: 100%;
+  color:blue;
   padding: auto;
   background: none;
   border: none solid rgb(178, 179, 184);
