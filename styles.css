@@ -105,7 +105,7 @@ body {
 }
 
 /* for tablets and phones */
-@media (max-width:767px){
+@media (min-width:300px) and (max-width:767px){
 #hero-section {
   display: block;
   text-align: center;
