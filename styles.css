@@ -75,12 +75,6 @@ body {
     align-items: start;
 
 }
-#hero-section {
-  display: block;
-  text-align: center;
-  padding:90px 0px 0px;
-  margin: auto;
-}
 
 @media (min-width: 768px){
   #hero-section {
@@ -121,6 +115,12 @@ body {
 }
 /* for tablets and phones */
 @media (max-width:768px){
+#hero-section {
+  display: block;
+  text-align: center;
+  padding:90px 0px 0px;
+  margin: auto;
+}
 #intro-text {
     text-align: center;
     align-items: center;
