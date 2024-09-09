@@ -105,7 +105,7 @@ body {
 }
 
 /* for tablets and phones */
-@media (min-width:300px){
+@media (max-width:767px){
 #hero-section {
   display: block;
   text-align: center;
@@ -115,7 +115,7 @@ body {
 #intro-text {
     text-align: center;
     align-items: center;
-    color: greenyellow;
+    color: red;
     padding-top: auto;
     background: none;
     border: none solid rgb(178, 179, 184);
@@ -161,7 +161,7 @@ body {
 } 
 #intro-text {
   width: 100%;
-  color:blue;
+  color:goldenrod;
   padding: auto;
   background: none;
   border: none solid rgb(178, 179, 184);
@@ -348,7 +348,7 @@ textarea{
     width: 10px;
     padding-right: 8;
 }
-@media (max-width:768px){
+@media (max-width:767px){
 .topnav {
   position: fixed;
   width: fit-content;
@@ -526,7 +526,7 @@ textarea{
 
   }
 
-  @media (min-width:780px){
+  @media (min-width:768px){
     .project-section {
       display: flex;
       align-items: center;
