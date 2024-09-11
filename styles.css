@@ -78,21 +78,27 @@ body {
 
 @media (min-width: 768px){
   #hero-section {
-    max-width: 1000px;
     display: flex;
-    margin-top: 0px;
-    margin-left: 50px;
-    overflow: hidden;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 5em;
+    max-width: 800px;
+
+}
+#intro-text,
+.img-container{
+  width: 50%;
+}
+
+.img-container{
+  display: flex;
+  justify-content: center;
+  align-items: start;
 }
 .avatar {
-  display: flex;
-  width: 275;
-  height: 280;
-  border: none;
+  width: 100%;
   border-radius: 50%;
-  margin: auto;
-  box-shadow: 0px 0px px rgb(11, 12, 13);
-
+  margin-left: 6em;
 }
 }
 
@@ -107,16 +113,18 @@ body {
 /* for tablets and phones */
 @media (max-width:767px){
 #hero-section {
-  display: block;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   padding:90px 0px 0px;
   margin: auto;
 }
+
 #intro-text {
     text-align: center;
     align-items: center;
-    color: red;
-    padding-top: auto;
+    color:goldenrod;
+    padding-top: 1.25em;
     background: none;
     border: none solid rgb(178, 179, 184);
     border-radius: 10px;
@@ -125,7 +133,6 @@ body {
     overflow:visible;  
 }
 .hi {
-  display: block;
   font-size: 3.75rem;
   font-weight: 100;
   letter-spacing: 1px;
@@ -134,8 +141,7 @@ body {
   
 }
 .avatar {
-  width: 275;
-  height: 280;
+  width: 50%;
   border: none;
   border-radius: 50%;
   margin: auto;
@@ -155,11 +161,10 @@ body {
   width: 50%;
 }
 /* for larger screens */
-@media (min-width: 768px) and (max-width:2000px){
-#hero-section{
-  max-width: 900px;
-} 
+@media (min-width: 768px) and (max-width:2000px){ 
 #intro-text {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   color:goldenrod;
   padding: auto;
@@ -171,17 +176,17 @@ body {
 }  
 .hi {
   display: block;
+  justify-content: space-between;
   font-size: 3.75rem;
   text-align: center;
   font-weight: 100;
   letter-spacing: 1px;
-  text-shadow: 0px 0px 0px rgb(92, 99, 100);
-  padding: 0;
-  margin: 90 auto 0 ;
+  padding: auto;
+  margin: auto ;
   line-height: 1.1;
 }
 #intro-text button {
-  width: 30%;
+  width: 40%;
   margin: 10px 5px;
 }
 
@@ -518,6 +523,7 @@ textarea{
     border: none solid rgb(178, 179, 184);
     border-radius: 15px;
     width: 85%;
+    max-width: 800px;
   }
 
   .project-section {
